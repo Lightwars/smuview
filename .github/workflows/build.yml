@@ -23,7 +23,7 @@ env:
   # Git URL for the sigrok dependencies
   SIGROK_REPO_BASE: "https://github.com/sigrokproject"
   # Build type for SmuView (Debug, Release, RelWithDebInfo, MinSizeRel)
-  BUILD_TYPE: "Release"
+  BUILD_TYPE: "Debug"
   # Misc commands
   WGET: "wget -c --quiet"
   GIT_CLONE: "git clone --depth=1"
