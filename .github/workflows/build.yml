@@ -99,6 +99,12 @@ jobs:
         with:
           name: SmuView NSIS ${{ matrix.target.target }} installer
           path: smuview/build/contrib/SmuView*installer.exe
+          
+      - name: Upload artifact2
+        uses: actions/upload-artifact@v2
+        with:
+          name: sigrok-cli NSIS ${{ matrix.target.target }} installer
+          path: ${{ env.INSTALL_DIR }}/sigrok-cli*installer.exe
 
 
   publish:
