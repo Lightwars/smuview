@@ -61,7 +61,6 @@ jobs:
       - name: Build dependencies
         run: |
           cd sigrok-util/cross-compile/github-actions
-          sudo apt-get install -y sdcc
           source sigrok-mxe-init-toolchain.sh
           ./sigrok-mxe-build-dependencies.sh
 
